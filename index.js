@@ -211,7 +211,7 @@ function encriptarPalavra2 (palavra, chave) {
   for(let i = 0; i < palavra.length; i++){
     for (let j = 0; j < alfabeto.length; j++) {
       if(palavra[i] == alfabeto[j]){
-        if((chave + j) > 26){//se chave + letra > alfabeto
+        if((chave + j) >= 26){//se chave + letra > alfabeto
         cripto += alfabeto[((chave + j) - 26)];
         }
         else{
